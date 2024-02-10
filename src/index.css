@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text1{
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}
+.text2{
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+}
+.text3{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+}
+.text4{
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    text-align: center;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.updown2{
+    animation-name: updown2;
+    animation-duration: 1.5s;
+}
+.updown3{
+    animation-name: updown3;
+    animation-duration: 1.5s;
+}
+.updown4{
+    animation-name: updown4;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes updown {
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: 0px;
+    }
+}
+@keyframes updown2 {
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: 25px;
+    }
+}
+@keyframes updown3 {
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: 100px;
+    }
+}
+@keyframes updown4 {
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: 140px;
+    }
+}
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
 }
